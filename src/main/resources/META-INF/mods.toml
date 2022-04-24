@@ -9,7 +9,7 @@ displayName="SpaceCraft" #mandatory
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 #logoFile="examplemod.png" #optional
-credits="Mojang for making the Minecraft. Forge for making Forge. Brian Cox for making programs about space." #optional
+credits="Mojang for making the Minecraft. Forge for making the Forge. Brian Cox for making the space programs." #optional
 authors="JamesDaProgrammer A.K.A James Hamilton" #optional
 description='''
 SpaceCraft is currently a Minecraft mod which does absolutely nothing :)
