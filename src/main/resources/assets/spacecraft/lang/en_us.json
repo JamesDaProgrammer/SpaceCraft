@@ -1,5 +1,7 @@
 {
   "item.spacecraft.cheese": "Cheese",
 
+  "block.spacecraft.moon_stone": "Moon Stone",
+
   "itemGroup.spacecraft_tab": "SpaceCraft"
 }

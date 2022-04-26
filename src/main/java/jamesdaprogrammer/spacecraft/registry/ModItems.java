@@ -1,7 +1,6 @@
 package jamesdaprogrammer.spacecraft.registry;
 
 import jamesdaprogrammer.spacecraft.SpaceCraft;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,7 +11,7 @@ public class ModItems {
     public static DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SpaceCraft.MOD_ID);
 
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE)));
+            () -> new Item(new Item.Properties().tab(SpaceCraft.CREATIVE_TAB).food(ModFoods.CHEESE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
