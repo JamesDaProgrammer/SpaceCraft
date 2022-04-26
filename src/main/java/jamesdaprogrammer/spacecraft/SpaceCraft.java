@@ -1,6 +1,9 @@
 package jamesdaprogrammer.spacecraft;
 
 import com.mojang.logging.LogUtils;
+import jamesdaprogrammer.spacecraft.registry.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -17,7 +20,16 @@ public class SpaceCraft {
     public SpaceCraft() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
+
+    public static final CreativeModeTab CREATIVE_TAB = new CreativeModeTab("spacecraft_tab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.CHEESE.get());
+        }
+    };
 }
